@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto",  sans-serif;
+}
+
+body {
+    background-color: #2f3238;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 124px;
+    margin-bottom: 150px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.title h3 {
+    font-size: 3rem;
+    color: #647375;
+    font-weight: 300;
+}
+
+.content > h3 {
+    font-size: 2.6rem;
+    color: #484b54;
+    font-size: 600;
+    margin-left: 5px;
+}
+
+.content__grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__grid__item-lily, .content__grid__item-Sadie, .content__grid__item-Goliath {
+    margin: 30px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.content__grid__item-lily {
+    background-color: #3085a3;
+    border: none;
+}
+
+
+.content__grid__item-lily .content__grid__item-lily__text {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    width: 80%;
+    height: 42px;
+    overflow: hidden;
+}
+
+
+
+.content__grid__item-lily:hover {
+    background-color: unset;
+    border: none;
+}
+
+
+.content__grid__item-lily h2 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 300;
+    transition: transform 0.35s;
+}
+
+.content__grid__item-lily h2 span {
+    font-weight: 800;
+}
+
+.content__grid__item-lily p {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0;
+    font-weight: 200;
+}
+
+.content__grid__item-lily:hover .content__grid__item-lily__text {
+    width: 100%;
+    height: 30%;
+    bottom: 30px;
+    left: 30px;
+    transition: ease-in .2s;
+}
+
+.content__grid__item-Sadie .content__grid__item-Sadie__text {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.content__grid__item-lily__img {
+    width: 480px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.content__grid__item-lily__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    opacity: 0.7;
+
+}
+
+.content__grid__item-lily:hover .content__grid__item-lily__img img {
+    transform: scaleX(1.2);
+}
+
+.content__grid__item-Sadie p {
+    display: none;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    background-color: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+    display: none;
+}
+
+.content__grid__item-Sadie:hover .overlay {
+    display: block;
+} */
+
+.content__grid__item-Sadie:hover {
+    opacity: 0.7;
+}
+
+.content__grid__item-Sadie:hover .content__grid__item-Sadie__text{
+    top: 30%;
+    height: 60%;
+    transition: ease-in .3s;
+    color: #fff;
+}
+
+.content__grid__item-Sadie:hover p {
+    display: block;
+}
+
+.content__grid__item-Sadie div h2 {
+    color: #484c61;
+    letter-spacing: 1px;
+    font-size: 3.6rem;
+    transition: transform 0.35s;
+}
+
+.content__grid__item-Sadie p {
+    font-size: 2rem;
+}
+
+
+.content__grid__item-Goliath h2 {
+    font-size: 3.6rem;
+    color: #fff;
+    margin-bottom: 55px;
+    margin-left: 30px;
+}
+
+.content__grid__item-Goliath .content__grid__item-Goliath__text {
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+
+}
+
+.content__grid__item-Goliath p {
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    background-color: #df4e4e;
+    display: none;
+}
+
+.content__grid__item-Goliath:hover p {
+    display: block;
+}
+
+.content__grid__item-Goliath:hover .content__grid__item-Goliath__text {
+    transition: all ease .3s;
+}
+
+
+
+
+
+
+
+
