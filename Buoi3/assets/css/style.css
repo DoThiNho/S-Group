@@ -46,6 +46,7 @@ body {
     /* margin-bottom: 72px; */
     padding: 40px 100px;
     z-index: 1;
+    transition: 0.4s;
 }
 
 #header a {
@@ -102,6 +103,7 @@ body {
 
 .content__text {
     padding-left: 100px;
+    padding-top: 20px;
 }
 
 .content__text span {

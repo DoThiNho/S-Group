@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #333;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background: white;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+.navbar__left .menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.navbar__right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn {
+    background: black;  
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000; 
+    cursor: pointer;
+}
+
+.navbar__right .login {
+    text-decoration: none;
+    color: #555;
+}
+.navbar__right .login:hover {
+    color: black;
+}
+
+.navbar__responsive-tablet {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 22px;
+    display: none;
+}
+
+.navbar__responsive-mobile {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    display: none;
+}
+
+.btn__mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) and (min-width: 580px) {
+    .navbar__right, .navbar__left .menu, .navbar__responsive-mobile {
+        display: none;
+    }
+
+    .navbar__responsive-tablet {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 579px){
+    .navbar__left, .navbar__right {
+        display: none;
+    }
+
+    .navbar__responsive-mobile {
+        display: flex;
+    }
+
+    .btn__mobile {
+        display: flex;
+        height: 50px;
+    }
+
+    .btn__mobile:hover {
+        border-radius: 0;
+    }
+
+    .icon {
+        margin-top: 2px;
+        display: block;
+    }
+}
+
