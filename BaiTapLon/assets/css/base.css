@@ -17,6 +17,7 @@ html {
 body {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .btn {
@@ -35,6 +36,10 @@ body {
 
 .m-auto {
     margin: 0 auto;
+}
+
+.m-bottom-20 {
+    margin-bottom: 20px;
 }
 
 .align-item-center {
@@ -58,6 +63,9 @@ body {
     font-weight: 400;
     margin-bottom: 60px;
     opacity: 0.6;
+    text-align: center;
+    line-height: 1.2;
+    color: #7c8595;
 }
 
 .p-110 {
@@ -79,6 +87,23 @@ body {
 .white-text {
     color: #fff;
     opacity: 1;
+}
+
+.overlay__red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(221, 49, 58, 0.95);
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.hide {
+    display: none;
 }
 
 

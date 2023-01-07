@@ -1,16 +1,118 @@
-/* PC */
-@media (max-width: 1023px) {
-
-}
-
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
-    .header__nav {
-        display: none;
-    }
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .header__nav-tablet {
+    display: flex;
+    align-items: center;
+  }
+  .partners .container {
+    max-width: 960px;
+  }
+  #home .home__hero .home__hero-title {
+    font-size: 3.8rem;
+  }
+  #home .home__hero .home__hero-text {
+    font-size: 1.8rem;
+  }
+  #home .home__hero-video .video__modal {
+    padding: 0 12px;
+  }
+  #home .home__hero-video .video__modal iframe {
+    margin-top: 40px;
+  }
+  #home .home__hero-video .video__modal .close {
+    display: block;
+    top: 100px;
+  }
+  #home .home__register {
+    margin-left: 8.33%;
+  }
+  #home .home__register h3 {
+    line-height: 1.2;
+  }
+  #about .container .about__service {
+    width: 100%;
+  }
+  #testimonials .card__info-name {
+    line-height: 1.2;
+  }
+  #pricing .pricing-tag .pricing-btn {
+    padding: 20px 14px;
+  }
 }
-
 /* Mobile */
-@media (max-width: 739px) {
-
+@media (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+  .header__nav-mobile {
+    display: flex;
+    align-items: center;
+  }
+  #home {
+    padding-top: 0;
+  }
+  #home .container {
+    max-width: 620px;
+    top: 0;
+  }
+  #home .home__hero {
+    width: 100%;
+  }
+  #home .home__hero-video .video__modal {
+    padding: 0 12px;
+  }
+  #home .home__hero-video .video__modal iframe {
+    margin-top: 40px;
+  }
+  #home .home__hero-video .video__modal .close {
+    display: block;
+    top: 100px;
+  }
+  #home .home__register {
+    width: 100%;
+    margin-left: 0;
+  }
+  .partners .container {
+    max-width: 420px;
+  }
+  #about .container .about__service {
+    width: 100%;
+  }
+  .discover {
+    flex-direction: column;
+  }
+  .discover__img {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .discover__text {
+    width: 80%;
+  }
+  .strength {
+    flex-direction: column;
+  }
+  .strength .strength__box {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+  .achievement {
+    padding: 110px 15px;
+  }
+  .achievement__list {
+    display: block;
+  }
+  .achievement h2 {
+    text-align: center;
+  }
+  #testimonials, #work, #team, #pricing, .question, .contact {
+    padding: 110px 15px;
+  }
+  #testimonials .card__info-name {
+    line-height: 1.2;
+  }
 }
+
+/*# sourceMappingURL=responsive.css.map */

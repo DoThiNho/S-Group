@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+<script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+
+    <script> new WOW().init(); </script>
 </head>
 <body>
     <div id="main">
@@ -63,10 +67,14 @@
                             <h1 class="home__hero-title">Award-Winning Agency Based In Manchested</h1>
                             <p class="home__hero-text">Excepteur sint occaecat cupidatat nonet proident, vante nisn culpa qui officia deserunt etimus quis autem nets lorem entimus velis netsad.</p>
                             <div class="home__hero-video">
-                                <a href="https://www.youtube.com/watch?v=FPfQMVf4vwQ" class="home__hero-video-link">
+                                <a href="#" class="home__hero-video-link">
                                     <iconify-icon icon="material-symbols:play-arrow" class="home__hero-icon"></iconify-icon>
                                 </a>
-                                <a href="" class="home__hero-video-text">Watch Presentation Video</a>
+                                <div class="video__modal">
+                                    <span class="close">&#10006;</span>
+                                    <iframe src="https://youtube.com/embed/FPfQMVf4vwQ"></iframe>
+                                </div>
+                                <a href="#" class="home__hero-video-text">Watch Presentation Video</a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +104,7 @@
         <section class="partners">
             <div class="grid wide container">
                 <div class="row">
-                    <div class="col text-center m-auto partners__box">
+                    <div class="col c-10 text-center m-auto partners__box">
                         <h5>As featured in:</h5>
                         <img src="./assets/img/award4a.png" alt="">
                         <img src="./assets/img/award5.png" alt="">
@@ -111,28 +119,36 @@
         <section class="p-110 bg-grey" id="about"> 
             <h2 class="div-title">What We Do</h2>
             <p class="div-subtitle">Dicover how our amazing team can help your business.</p>
-            <div class="container">
-                <div class="about__service">
-                    <iconify-icon class="icon-chart" icon="mdi:chart-bar"></iconify-icon>
-                    <h4>Google Analitycs</h4>
-                    <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
-                </div>
-                <div class="about__service">
-                    <iconify-icon class="icon-heart"  icon="mdi:cards-heart-outline"></iconify-icon>
-                    <h4>Brand Awareness</h4>
-                    <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
-                </div>
-                <div class="about__service">
-                    <iconify-icon class="icon-anchor" icon="material-symbols:anchor"></iconify-icon>
-                    <h4>Graphic Design</h4>
-                    <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+            <div class="grid wide container">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <div class="about__service">
+                            <iconify-icon class="icon-chart" icon="mdi:chart-bar"></iconify-icon>
+                            <h4>Google Analitycs</h4>
+                            <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="about__service">
+                            <iconify-icon class="icon-heart"  icon="mdi:cards-heart-outline"></iconify-icon>
+                            <h4>Brand Awareness</h4>
+                            <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="about__service">
+                            <iconify-icon class="icon-anchor" icon="material-symbols:anchor"></iconify-icon>
+                            <h4>Graphic Design</h4>
+                            <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <section class="discover p-110">
-            <div class="discover__img">
+            <div class="discover__img wow slideInLeft" data-wow-delay="0.25s">
                 <img src="./assets/img/about001.jpg" alt="">
             </div>
             <div class="discover__text">
@@ -158,65 +174,76 @@
 
 
         <section class="strength p-110 bg-grey">
-            <div class="strength__box">
-                <div class="strength__info">
-                    <div class="strength__icon">
-                        <iconify-icon class="icon-chartline" icon="ph:chart-line-up-bold"></iconify-icon>
+            <div class="grid wide">
+                <div class="row align-item-center justify-content-center">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="strength__box">
+                            <div class="strength__info">
+                                <div class="strength__icon">
+                                    <iconify-icon class="icon-chartline" icon="ph:chart-line-up-bold"></iconify-icon>
+                                </div>
+                                <h4>Customize your workflow.</h4>
+                                <p>Manage any process and be ready to address any challenge with total ease.</p>
+                            </div>
+                            <div class="strength__info">
+                                <div class="strength__icon">
+                                    <iconify-icon class="icon-network" icon="fa6-solid:network-wired"></iconify-icon>
+                                </div>
+                                <h4>Easy onboarding, fast adoption.</h4>
+                                <p>With Square getting your team on board is as simple as sending an email.</p>
+                            </div>
+                            <div class="strength__info">
+                                <div class="strength__icon">
+                                    <iconify-icon class="icon-rocket" icon="bi:rocket-takeoff-fill"></iconify-icon>
+                                </div>
+                                <h4>Improve subscriber retention.</h4>
+                                <p>Analyze customers by region, discounts and more and put a plan in place.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="strength__text">
-                        <h4>Customize your workflow.</h4>
-                        <p>Manage any process and be ready to address any challenge with total ease.</p>
+                    <div class="col l-6 m-6 c-12">
+                        <div class="strength__img m-auto">
+                            <img src="./assets/img/about2.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="strength__info">
-                    <div class="strength__icon">
-                        <iconify-icon class="icon-network" icon="fa6-solid:network-wired"></iconify-icon>
-                    </div>
-                    <div class="strength__text">
-                        <h4>Easy onboarding, fast adoption.</h4>
-                        <p>With Square getting your team on board is as simple as sending an email.</p>
-                    </div>
-                </div>
-                <div class="strength__info">
-                    <div class="strength__icon">
-                        <iconify-icon class="icon-rocket" icon="bi:rocket-takeoff-fill"></iconify-icon>
-                    </div>
-                    <div class="strength__text">
-                        <h4>Improve subscriber retention.</h4>
-                        <p>Analyze customers by region, discounts and more and put a plan in place.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="strength__img">
-                <img src="./assets/img/about2.jpg" alt="">
             </div>
         </section>
         
 
         <section class="achievement p-110 bg-red">
-                <h2>Fun Facts About Our Agency</h2>
-                <ul class="achievement__list">
-                    <li>
-                        <iconify-icon icon="bi:gem"></iconify-icon>
-                        <span>1050+</span>
-                        <p>Projects Completed</p>
-                    </li>
-                    <li>
-                        <iconify-icon icon="mdi:cards-heart-outline"></iconify-icon>
-                        <span>217k</span>
-                        <p>Happy Clients</p>
-                    </li>
-                    <li>
-                        <iconify-icon icon="tabler:award"></iconify-icon>
-                        <span>1210</span>
-                        <p>Design Awards</p>
-                    </li>
-                    <li>
-                        <iconify-icon icon="material-symbols:anchor"></iconify-icon>
-                        <span>2137</span>
-                        <p>Line Of Codes</p>
-                    </li>
-                </ul>
+                <div class="overlay__red"></div>
+                <div class="grid wide z-1">
+                    <div class="row">
+                        <div class="col l-7 m-7 c-12 z-1 m-auto text-center">
+                            <h2>Fun Facts About Our Agency</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- <ul class="achievement__list z-1"> -->
+                            <div class="col l-2 l-o-2 m-2 m-o-2 c-12 m-bottom-20 text-center">
+                                <iconify-icon icon="bi:gem"></iconify-icon>
+                                <span>1050+</span>
+                                <p>Projects Completed</p>
+                            </div>
+                                <div class="col l-2 m-2 c-12 m-bottom-20 text-center">
+                                    <iconify-icon icon="mdi:cards-heart-outline"></iconify-icon>
+                                    <span>217k</span>
+                                    <p>Happy Clients</p>
+                                </div>
+                                <div class="col l-2 m-2 c-12 m-bottom-20 text-center">
+                                    <iconify-icon icon="tabler:award"></iconify-icon>
+                                    <span>1210</span>
+                                    <p>Design Awards</p>
+                                </div>
+                                <div class="col l-2 m-2 c-12 m-bottom-20 text-center">
+                                    <iconify-icon icon="material-symbols:anchor"></iconify-icon>
+                                    <span>2137</span>
+                                    <p>Line Of Codes</p>
+                                </div>
+                        <!-- </ul> -->
+                    </div>
+                </div>
         </section>
 
 
@@ -227,7 +254,7 @@
                         <h2>What People Are Saying.</h2>
                         <p class="testimonials-text">Quis autem velis ets reprehender net etid quiste nets voluptate. Utise wisi enim minim veniam, quis etsad aspernatis netsum stationes nets.</p>
                         <div class="row">
-                            <div class="col l-4 first">
+                            <div class="col l-4 m-5 c-12 first">
                                 <h4>TrustPilot</h4>
                                 <div class="testimonials__rating">
                                     <iconify-icon icon="material-symbols:star"></iconify-icon>
@@ -237,7 +264,7 @@
                                     <iconify-icon icon="material-symbols:star-rate-half"></iconify-icon>
                                 </div>
                             </div>
-                            <div class="col l-4">
+                            <div class="col l-4 m-5 c-12">
                                 <h4>Feefo</h4>
                                 <div class="testimonials__rating">
                                     <iconify-icon icon="material-symbols:star"></iconify-icon>
@@ -297,14 +324,14 @@
         <section class="p-110 bg-white" id="work">
             <div class="grid wide">
                 <div class="row text-center">
-                    <div class="col l-12">
+                    <div class="col l-12 m-12 c-12">
                         <h2 class="div-title">Our Portfolio</h2>
                         <p class="div-subtitle">Dicover the latest projects accomplished for my clients.</p>
                     </div>
                 </div>
             </div>
             <div class="grid wide">
-                <div class="row">
+                <div class="row wow fadeIn" data-wow-delay="0.25s">
                     <div class="col l-4 m-4 c-12">
                         <div class="work__gallery">
                             <iconify-icon icon="fe:search-plus"></iconify-icon>
@@ -319,7 +346,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col l-4 m-4 c-6">
+                    <div class="col l-4 m-4 c-12">
                         <div class="work__gallery">
                             <iconify-icon icon="fe:search-plus"></iconify-icon>
                             <a href="" class="work__gallery-link">
@@ -327,7 +354,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col l-4 m-4 c-6">
+                    <div class="col l-4 m-4 c-12">
                         <div class="work__gallery">
                             <iconify-icon icon="fe:search-plus"></iconify-icon>
                             <a href="" class="work__gallery-link">
@@ -388,9 +415,10 @@
         </section>
 
         <section class="agency p-110 bg-red">
+            <div class="overlay__red"></div>
             <div class="grid wide">
                 <div class="row text-center">
-                    <div class="col l-7 m-7 c-7  m-auto">
+                    <div class="col l-7 m-7 c-12  m-auto z-1">
                         <h2>Award-Winning Agency</h2>
                         <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim aspernatur netsum.</p>
                         <a href="#home" class="btn btn-white">Discover More</a>
@@ -410,7 +438,7 @@
                 </div>
                 <div class="row">
                     <div class="col l-4 m-4 c-12">
-                        <div class="feature__box" style="animation-delay: 0.25s;">
+                        <div class="feature__box wow fadeIn" data-wow-delay="0.25s">
                             <iconify-icon icon="carbon:tool-kit" style="color:#a9d129"></iconify-icon>
                             <div class="feature__box-text">
                                 <h4>Support 24/7</h4>
@@ -419,7 +447,7 @@
                         </div>
                     </div>
                     <div class="col l-4 m-4 c-12">
-                        <div class="feature__box" style="animation-delay: 0.5s;">
+                        <div class="feature__box wow fadeIn" data-wow-delay="0.5s">
                             <iconify-icon icon="mdi:users-group" style="color:#50a0d2"></iconify-icon>
                             <div class="feature__box-text">
                                 <h4>User Friendly</h4>
@@ -428,7 +456,7 @@
                         </div>
                     </div>
                     <div class="col l-4 m-4 c-12">
-                        <div class="feature__box" style="animation-delay: 0.75s;">
+                        <div class="feature__box wow fadeIn" data-wow-delay="0.75s">
                             <iconify-icon icon="mdi:bell-outline" style="color:#fe9c24"></iconify-icon>
                             <div class="feature__box-text">
                                 <h4>Notifications</h4>
@@ -439,7 +467,7 @@
                 </div>
                 <div class="row">
                     <div class="col l-4 m-4 c-12">
-                        <div class="feature__box" style="animation-delay: 1s;">
+                        <div class="feature__box wow fadeIn" data-wow-delay="1s">
                             <iconify-icon icon="mdi:gift" style="color: #3473b8;"></iconify-icon>
                             <div class="feature__box-text">
                                 <h4>Accesibility</h4>
@@ -448,7 +476,7 @@
                         </div>
                     </div>
                     <div class="col l-4 m-4 c-12">
-                        <div class="feature__box" style="animation-delay: 1.25s;">
+                        <div class="feature__box wow fadeIn" data-wow-delay="1.25s">
                             <iconify-icon icon="fa-solid:piggy-bank" style="color: #fc6a3f;"></iconify-icon>
                             <div class="feature__box-text">
                                 <h4>Cost Control</h4>
@@ -457,7 +485,7 @@
                         </div>
                     </div>
                     <div class="col l-4 m-4 c-12">
-                        <div class="feature__box" style="animation-delay: 1.5s;">
+                        <div class="feature__box wow fadeIn" data-wow-delay="1.5s">
                             <iconify-icon icon="fa-regular:comments" style="color: #87ac34;"></iconify-icon>
                             <div class="feature__box-text">
                                 <h4>Chat With Friends</h4>
@@ -472,11 +500,11 @@
         <section class="p-110 bg-grey" id="pricing">
             <div class="grid wide">
                 <div class="row align-item-center">
-                    <div class="col l-4 m-12 c-12">
+                    <div class="col l-4 m-4 c-12">
                         <h3>Great pricing plans tailored to your needs.</h3>
                         <p>Quis autem velis ets reprehender net etid quiste voluptate. Utise wisi enim minim veniam, quis et stationes nets.</p>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="col l-4 m-4 c-12 wow bounceIn" data-wow-delay="0.25s">
                         <ul class="pricing-list-white bg-white text-center">
                             <li class="pricing-title">MONTHLY</li>
                             <li class="pricing-price">$19</li>
@@ -488,7 +516,7 @@
                             <li class="pricing-text">Amazing freatures.</li>
                         </ul>
                     </div>
-                    <div class="col l-4 m-6 c-12">
+                    <div class="col l-4 m-4 c-12 wow bounceIn" data-wow-delay="0.75s">
                         <ul class="pricing-list-red white-text bg-red text-center">
                             <li class="pricing-title">ANNUALY</li>
                             <li class="pricing-price">$29</li>
@@ -543,21 +571,22 @@
         </section>
 
         <section class="contact p-110 bg-red">
+            <div class="overlay__red"></div>
             <div class="grid wide">
                 <div class="row text-center">
-                    <div class="col l-12 m-12 c-12">
+                    <div class="col l-12 m-12 c-12  z-1">
                         <h2 class="div-title white-text">Contact Us</h2>
                         <p class="div-subtitle white-text">Have any queries? Get in touch today.</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col l-8 m-8">
-                        <form action="" class="row contact-form">
+                    <div class="col l-8 m-8 z-1">
+                        <form action="" class="row contact-form wow bounceIn" data-wow-delay="0.5s">
                             <div class="col l-6 m-6 c-12">
                                 <input type="text" name="name" id="" placeholder="Your Name*"><br>
                                 <input type="text" name="phone" id="" placeholder="Phone Number*">
                             </div>
-                            <div class="col l-6 m-6 c-12">
+                            <div class="col l-6 m-6 c-12 z-1">
                                 <input type="text" name="email" id="" placeholder="Email Adress*"><br>
                                 <select name="" id="">
                                     <option value="">Choose Option</option>
@@ -565,7 +594,7 @@
                                     <option value="">Corporate</option>
                                 </select>
                             </div>
-                            <div class="col l-12 m-12 c-12">
+                            <div class="col l-12 m-12 c-12 z-1">
                                 <textarea name="" id="" cols="20" rows="2" placeholder="Your Message..."></textarea>
                                 <input type="submit" value="GET IN TOUCH">
                             </div>

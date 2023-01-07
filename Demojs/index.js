@@ -1,16 +1,21 @@
-const players = [
-    { id: 11, name: 'Messi', age: 33 },
-    { id: 12, name: 'Ronaldo', age: 34 },
-    { id: 13, name: 'Young', age: 35 },
-    { id: 14, name: 'Mane', age: 21 },
-    { id: 15, name: 'Salah', age: 24 },
-]
 
-const convertObject = players.reduce((objs, player) => {
-    return {
-        ...objs,
-        [player.id] : player
-    }
-}, {})
+function handleInfor (event) {
+    console.log(event);
+    event.preventDefault();
+    const name = document.querySelector('#name').value;
+    const age = document.querySelector('#age').value;
+    const uniClass = document.querySelector('#uniClass').value;
+    
+    setInfor(name, age, uniClass);
+}
 
-console.log(convertObject);
+function setInfor(name, age, uniClass){
+    document.querySelector('#name-infor').innerText = name;
+    document.querySelector('#age-infor').innerText = age;
+    document.querySelector('#uniClass-infor').innerText = uniClass;
+}
+
+document.querySelector("#introduce-info").addEventListener("submit",handleInfor);
+
+
+
