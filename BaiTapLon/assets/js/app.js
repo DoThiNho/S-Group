@@ -77,14 +77,21 @@ close.addEventListener('click', () => {
 // toggle menu mobile/tablet
 const menuIcons = document.querySelectorAll('.header iconify-icon')
 const menu = document.querySelector('.header__menu')
-
-console.log(menu)
+const menuLinks = document.querySelectorAll('.header__menu-item-link')
 
 menuIcons.forEach(menuIcon => {
   menuIcon.addEventListener('click', () => {
     menu.classList.toggle('apperance')
   })
 })
+
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener('click', () => {
+    menu.classList.remove('apperance');
+  })
+})
+
+
 
 
 

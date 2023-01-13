@@ -109,7 +109,7 @@ body {
 .apperance {
     /* display: block!important; */
     opacity: 1!important;
-    pointer-events: visible;
+    pointer-events: visible!important;
     transform: translateY(0);
 }
 
