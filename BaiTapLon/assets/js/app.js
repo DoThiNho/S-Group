@@ -116,6 +116,11 @@ modalClosebtn.addEventListener('click', () => {
     body.style.overflowY = 'visible ';
 })
 
+workModal.addEventListener('click', () => {
+  workModal.classList.add('hide')
+  workModal.classList.remove('apperance-flex');
+  body.style.overflowY = 'visible ';
+})
 
 
 prevbtn.addEventListener('click', (e) => {
@@ -130,5 +135,6 @@ nextbtn.addEventListener('click', () => {
   imgModal.src = galleryImages[currentImg+1].src;
   currentImg++;
 })
+
 
 

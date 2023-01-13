@@ -107,7 +107,10 @@ body {
 }
 
 .apperance {
-    display: block!important;
+    /* display: block!important; */
+    opacity: 1!important;
+    pointer-events: visible;
+    transform: translateY(0);
 }
 
 .apperance-flex {
