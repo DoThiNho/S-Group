@@ -20,17 +20,20 @@
     padding: 0 12px;
   }
   #home .home__hero-video .video__modal iframe {
-    margin-top: 40px;
+    margin-top: 135px;
   }
   #home .home__hero-video .video__modal .close {
     display: block;
-    top: 100px;
+    top: 37%;
   }
   #home .home__register {
     margin-left: 8.33%;
   }
   #home .home__register h3 {
     line-height: 1.2;
+  }
+  #home .home__register .btn-register {
+    padding: 0;
   }
   #about .container .about__service {
     width: 100%;
@@ -51,6 +54,9 @@
     display: flex;
     align-items: center;
   }
+  .header__menu .header__menu-list {
+    width: 100%;
+  }
   #home {
     padding-top: 0;
   }
@@ -65,11 +71,13 @@
     padding: 0 12px;
   }
   #home .home__hero-video .video__modal iframe {
+    width: 500px;
+    height: 200px;
     margin-top: 40px;
   }
   #home .home__hero-video .video__modal .close {
     display: block;
-    top: 100px;
+    top: 32%;
   }
   #home .home__register {
     width: 100%;

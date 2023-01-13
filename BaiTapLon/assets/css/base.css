@@ -103,8 +103,17 @@ body {
 }
 
 .hide {
-    display: none;
+    display: none!important;
 }
+
+.apperance {
+    display: block!important;
+}
+
+.apperance-flex {
+    display: flex!important;
+}
+
 
 
 

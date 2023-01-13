@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 999;
   background-color: #fff;
   width: 100%;
   height: 100px;
@@ -71,6 +71,10 @@
   border: 1px solid #e52f37;
   padding: 7px 12px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.header__nav-tablet iconify-icon:focus {
+  border: 2px solid #000;
 }
 .header__nav-mobile {
   width: 100%;
@@ -85,6 +89,40 @@
   border: 1px solid #e52f37;
   padding: 7px 12px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.header__nav-mobile iconify-icon:focus {
+  border: 2px solid #000;
+}
+.header__menu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 25px 20px 25px;
+  display: none;
+}
+.header__menu .header__menu-list {
+  list-style: none;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  width: 70%;
+  margin: 0 auto;
+}
+.header__menu .header__menu-list .header__menu-item {
+  padding: 6px 15px;
+}
+.header__menu .header__menu-list .header__menu-item-link {
+  text-decoration: none;
+  color: #071e55;
+  transition: all 0.2s ease-in;
+}
+.header__menu .header__menu-list .header__menu-item-link:hover {
+  color: #e52f37;
+}
+.header__menu .header__menu-list .header__menu-item-btn {
+  padding: 10px 12px;
+  text-decoration: none;
 }
 
 .active {
@@ -614,6 +652,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: all 0.25s ease-in-out;
 }
 #work .work__gallery:hover {
   cursor: pointer;
@@ -635,6 +674,63 @@
   background-color: #e52f37;
   opacity: 0.8;
   z-index: 1;
+}
+#work .work__modal {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: zoom-out;
+  display: none;
+}
+#work .work__modal .work__modal-img {
+  margin-bottom: 185px;
+  cursor: pointer;
+}
+#work .work__modal .work__modal-img img {
+  max-height: 714px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#work .work__modal .work__modal-img .work__modal-btn {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #b6b6b6;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+}
+#work .work__modal .work__modal-img .work__modal-btn:hover {
+  color: #fff;
+}
+#work .work__modal .work__modal-img p {
+  color: #797775;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  text-align: right;
+}
+#work .work__modal .btn-icon {
+  font-size: 7rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: #b8b9b9;
+  margin-bottom: 185px;
+}
+#work .work__modal .btn-icon:hover {
+  color: #fff;
 }
 
 #team .team-title {

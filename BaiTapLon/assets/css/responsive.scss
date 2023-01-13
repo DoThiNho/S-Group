@@ -29,12 +29,12 @@
                 .video__modal {
                     padding: 0 12px;
                     iframe {
-                        margin-top: 40px;
+                        margin-top: 135px;
                     }
 
                     .close {
                         display: block;
-                        top: 100px;
+                        top: 37%;
                     }
                 }
             }
@@ -44,6 +44,10 @@
 
             h3 {
                 line-height: 1.2;
+            }
+
+            .btn-register {
+                padding: 0;
             }
         }
     }
@@ -76,12 +80,19 @@
 
     .header__nav {
         display: none;
+
+        &-mobile {
+            display: flex;
+        align-items: center;
+        }
     }
 
-    .header__nav-mobile {
-        display: flex;
-        align-items: center;
+    .header__menu {
+        .header__menu-list {
+            width: 100%;
+        }
     }
+
 
     #home {
         padding-top: 0;
@@ -98,12 +109,14 @@
                 .video__modal {
                     padding: 0 12px;
                     iframe {
+                        width: 500px;
+                        height: 200px;
                         margin-top: 40px;
                     }
 
                     .close {
                         display: block;
-                        top: 100px;
+                        top: 32%;
                     }
                 }
             }

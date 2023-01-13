@@ -72,3 +72,63 @@ close.addEventListener('click', () => {
   modalVideo.classList.remove('show');
   body.style.overflowY = 'visible ';
 });
+
+
+// toggle menu mobile/tablet
+const menuIcons = document.querySelectorAll('.header iconify-icon')
+const menu = document.querySelector('.header__menu')
+
+console.log(menu)
+
+menuIcons.forEach(menuIcon => {
+  menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('apperance')
+  })
+})
+
+
+
+const workModal = document.querySelector('.work__modal');
+const galleryImages = document.querySelectorAll('.work__gallery-link img');
+const gallerys = document.querySelectorAll('.work__gallery');
+const modalClosebtn = document.querySelector('.work__modal-btn');
+const imgModal = document.querySelector('.work__modal-img img');
+const modalCounter = document.querySelector('.work__modal-counter');
+const prevbtn = document.querySelector('.prev');
+const nextbtn = document.querySelector('.next');
+
+let currentImg = 0;
+
+gallerys.forEach((gallery, index) => {
+  gallery.addEventListener('click', (event) => {
+      event.preventDefault();
+      imgModal.src = galleryImages[index].src;
+      modalCounter.innerText = index+1;
+      currentImg = index;
+      workModal.classList.add('apperance-flex')
+      body.style.overflowY = 'hidden';
+    })
+})
+
+modalClosebtn.addEventListener('click', () => {
+    workModal.classList.add('hide')
+    workModal.classList.remove('apperance-flex')
+    body.style.overflowY = 'visible ';
+})
+
+
+
+prevbtn.addEventListener('click', (e) => {
+    if(currentImg === 0) currentImg = galleryImages.length
+    imgModal.src = galleryImages[currentImg-1].src;
+    currentImg--;
+})
+
+
+nextbtn.addEventListener('click', () => {
+  if(currentImg === galleryImages.length-1) currentImg = 0
+  imgModal.src = galleryImages[currentImg+1].src;
+  currentImg++;
+})
+
+
