@@ -116,7 +116,8 @@ modalClosebtn.addEventListener('click', () => {
     body.style.overflowY = 'visible ';
 })
 
-workModal.addEventListener('click', () => {
+workModal.addEventListener('click', (e) => {
+  e.stopPropagation()
   workModal.classList.add('hide')
   workModal.classList.remove('apperance-flex');
   body.style.overflowY = 'visible ';
@@ -124,13 +125,15 @@ workModal.addEventListener('click', () => {
 
 
 prevbtn.addEventListener('click', (e) => {
+  e.stopPropagation()
     if(currentImg === 0) currentImg = galleryImages.length
     imgModal.src = galleryImages[currentImg-1].src;
     currentImg--;
 })
 
 
-nextbtn.addEventListener('click', () => {
+nextbtn.addEventListener('click', (e) => {
+  e.stopPropagation()
   if(currentImg === galleryImages.length-1) currentImg = 0
   imgModal.src = galleryImages[currentImg+1].src;
   currentImg++;
