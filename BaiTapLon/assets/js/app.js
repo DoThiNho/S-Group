@@ -135,14 +135,16 @@ prevbtn.addEventListener('click', (e) => {
   e.stopPropagation()
     if(currentImg === 0) currentImg = galleryImages.length
     imgModal.src = galleryImages[currentImg-1].src;
+    modalCounter.innerText = currentImg;
     currentImg--;
 })
 
 
 nextbtn.addEventListener('click', (e) => {
   e.stopPropagation()
-  if(currentImg === galleryImages.length-1) currentImg = 0
+  if(currentImg === galleryImages.length-1) currentImg = -1
   imgModal.src = galleryImages[currentImg+1].src;
+  modalCounter.innerText = currentImg+2;
   currentImg++;
 })
 
