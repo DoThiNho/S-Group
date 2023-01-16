@@ -94,7 +94,7 @@ menuLinks.forEach(menuLink => {
 
 
 
-
+// change img work
 const workModal = document.querySelector('.work__modal');
 const galleryImages = document.querySelectorAll('.work__gallery-link img');
 const gallerys = document.querySelectorAll('.work__gallery');
@@ -147,6 +147,26 @@ nextbtn.addEventListener('click', (e) => {
   modalCounter.innerText = currentImg+2;
   currentImg++;
 })
+
+
+// change img strength
+const strengths = document.querySelectorAll('.strength__info');
+const strengthImgs = document.querySelectorAll('.strength__img');
+
+
+strengths.forEach((strength, index) => {
+  strength.addEventListener('click', () => {
+    strengthImgs[index].classList.remove('hide')
+    strength.classList.add('bg-white')
+    strengths.forEach((item, indexItem) => {
+      if(indexItem !== index) {
+        strengthImgs[indexItem].classList.add('hide')
+        item.classList.remove('bg-white')
+      }
+    })
+  }) 
+})
+
 
 
 
