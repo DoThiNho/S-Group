@@ -42,12 +42,29 @@ window.addEventListener('scroll', function(){
 const cards = document.querySelectorAll('.card');
 const cardTexts = document.querySelectorAll('.card-text');
 
+if(window.innerWidth > 768 && window.innerWidth < 1024) {
+  cardTexts[0].style.height = '200px'
+}
+else cardTexts[0].style.height = '100px'
+
 cards.forEach((card, index) => {
 
   const cardText = cardTexts[index];
 
     card.onclick = function () {
-      cardText.classList.toggle('hide');
+      if (cardText.style.height){
+        cardText.style.height = null;
+      } else {
+        if(window.innerWidth > 768 && window.innerWidth < 1024) {
+          cardText.style.height = '200px';
+        }
+        else cardText.style.height = '100px';
+      }   
+      cardTexts.forEach((item, indexItem) => {
+          if(indexItem !== index) {
+            item.style.height = null;
+          }
+      })
     }
 });
 
